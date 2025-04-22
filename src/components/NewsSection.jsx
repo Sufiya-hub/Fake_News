@@ -7,7 +7,10 @@ const NewsSection = () => {
   return (
     <Marquee className="">
       {NEWS.map((item, index) => (
-        <div key={index} className="flex flex-col gap-3 mr-10">
+        <div
+          key={index}
+          className="flex flex-col gap-3 mr-6 bg-white p-4 rounded-lg "
+        >
           <div className="flex gap-4">
             <h1 className="flex font-semibold text-xs text-[#899DAF]">
               {item.label}
@@ -16,7 +19,7 @@ const NewsSection = () => {
               {item.time}
             </h1>
           </div>
-          <h1 className="flex font-bold text-md w-[200px] h-[100px] ellipsis-text">
+          <h1 className="font-bold text-md w-[200px] h-[100px] line-clamp-4">
             {item.desc}
           </h1>
         </div>

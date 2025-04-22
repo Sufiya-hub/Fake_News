@@ -19,7 +19,6 @@ const Layout = () => {
           <NewsSection />
         </div>
       </div>
-
       <Recommendations />
     </div>
   );
